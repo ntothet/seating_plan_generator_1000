@@ -1,0 +1,32 @@
+<div id="container">
+  <div id="guestlist">
+    <h3>Gästeliste</h3>
+    <ul id="guests"></ul>
+  </div>
+  <canvas id="sitzplan" width="1000" height="700"></canvas>
+  <div id="controls">
+    <h3>Tisch hinzufügen</h3>
+    <label>
+      Tischname:<br>
+      <input type="text" id="tableName" placeholder="z.B. Brauttisch">
+    </label><br><br>
+    <label>
+      Tischtyp:<br>
+      <select id="tableType">
+        <option value="circle">Rund</option>
+        <option value="rect">Rechteck</option>
+      </select>
+    </label><br><br>
+    <label>
+      Anzahl Stühle:<br>
+      <input type="number" id="seatCount" value="6" min="1">
+    </label><br><br>
+    <label id="rectHeadLabel" style="display:none">
+      Stühle an Kopfseiten:<br>
+      <input type="checkbox" id="headSeats">
+    </label><br>
+    <button id="addTable">Tisch hinzufügen</button>
+    <button id="printCanvasBtn">Sitzplan drucken</button>
+    <button id="printListBtn">Gästeliste drucken</button>
+  </div>
+</div>
